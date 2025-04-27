@@ -1,0 +1,99 @@
+ 
+Here’s the *updated version* you can post on your GitHub:
+
+---
+
+# 📚 Chatbot using Amazon Lex (Kommunicate Integration)
+
+This project demonstrates how to build, validate, and integrate a *smart conversational chatbot* using *Amazon Lex V2* and deploy it onto a website or application using *Kommunicate*.  
+It acts as a *Course Enrollment Assistant* that interacts with users to collect course preferences and validates inputs dynamically via AWS Lambda.
+
+---
+
+## 🚀 Features
+- *Amazon Lex V2* powers natural conversation handling.
+- *Slot Validation* managed through *AWS Lambda* (Python).
+- *Course Selection* support with options like:
+  - Course Level (Beginner, Intermediate, Advanced)
+  - Course Name (Full Stack, Cloud Computing, Machine Learning, etc.)
+  - Course Type (Online, Offline, Hybrid)
+  - Course Duration (1 month, 3 months, 6 months)
+- *Kommunicate Integration* for smooth web and mobile deployment.
+- *Dynamic Slot Elicitation* and *User-friendly error handling*.
+- *Session Management* and intent fulfillment.
+
+---
+
+## 🛠 Tech Stack
+- *Amazon Lex V2* — Conversational AI
+- *AWS Lambda (Python)* — Custom slot validation logic
+- *Kommunicate.io* — Frontend chatbot deployment
+- *AWS IAM Roles* — Secure service access
+- *AWS Management Console* — Bot and Lambda management
+
+---
+
+## 📑 Project Structure
+bash
+📁 lambda_function/
+    └── validate_order.py       # Lambda function for slot validation
+📁 lex_bot/
+    └── intents_and_slots.json   # (Optional) Lex bot export file
+📁 kommunicate_integration/
+    └── kommunicate_script.html  # Example Kommunicate widget script
+README.md                        # Project documentation (this file)
+
+
+---
+
+## ⚡ How it Works
+1. User chats with the bot via the *Kommunicate chat widget*.
+2. Kommunicate forwards the messages to *Amazon Lex*.
+3. Lex gathers required course information by eliciting slots.
+4. AWS Lambda function validates slot inputs dynamically.
+5. After validation, Lex fulfills the intent and optionally triggers further actions.
+
+---
+
+## 💬 Kommunicate Integration
+- *Kommunicate* acts as a frontend layer that communicates with *Amazon Lex*.
+- Simple *Javascript widget* is added to any website or app.
+- Real-time chat interface, rich message types, and mobile support.
+
+---
+
+## 📋 Prerequisites
+- AWS account (for Lex and Lambda)
+- Kommunicate account (free plan available)
+- Basic knowledge of AWS Lex and Lambda
+- Website or app access for widget embedding
+
+---
+
+## 🏗 Deployment Steps
+- Deploy the Lambda function using AWS Console.
+- Create and configure the Amazon Lex V2 bot.
+- Link Lex bot with Kommunicate via the *Kommunicate Dashboard*.
+- Embed the Kommunicate script into your website or app.
+
+---
+
+## 📸 Screenshots
+(You can add screenshots of your Lex bot, Lambda function, and the Kommunicate chatbot widget here.)
+
+---
+
+## 🌟 Future Improvements
+- Connect the chatbot to a backend database (like DynamoDB) to store enrollments.
+- Enable session persistence and chat history.
+- Add support for multiple languages.
+- Create a chatbot analytics dashboard.
+
+---
+
+## 🙌 Acknowledgements
+- [AWS Lex Documentation](https://docs.aws.amazon.com/lexv2/latest/dg/what-is.html)
+- [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
+- [Kommunicate Documentation](https://docs.kommunicate.io/docs/bot-integration/amazon-lex)
+
+---
